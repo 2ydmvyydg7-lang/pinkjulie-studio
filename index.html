@@ -1,81 +1,220 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pinkjulie ju | Shop</title>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root { --pink-bg: #FFD1DC; --soft-yellow: #FFF9E5; --hot-pink: #FF69B4; --line-green: #06C755; }
-        body { font-family: 'Kanit', sans-serif; background-color: #FFF0F5; margin: 0; padding: 15px; display: flex; justify-content: center; }
-        .container { max-width: 480px; width: 100%; background: white; border-radius: 40px; border: 8px solid var(--pink-bg); overflow: hidden; box-shadow: 0 10px 25px rgba(255,105,180,0.2); }
-        
-        .header { background: var(--pink-bg); padding: 30px 10px; text-align: center; }
-        h1 { color: white; margin: 0; font-size: 32px; text-shadow: 2px 2px var(--hot-pink); }
-        .tagline { background: white; color: var(--hot-pink); display: inline-block; padding: 2px 15px; border-radius: 20px; font-size: 14px; margin-top: 10px; font-weight: 600; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pinkjulie ju</title>
 
-        .section { padding: 20px; text-align: center; }
-        h2 { color: var(--hot-pink); font-size: 18px; margin-bottom: 15px; background: var(--soft-yellow); display: inline-block; padding: 5px 20px; border-radius: 15px; }
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
 
-        .btn { display: block; background: white; border: 3px solid var(--pink-bg); color: var(--hot-pink); padding: 12px; margin: 10px auto; border-radius: 25px; text-decoration: none; font-weight: 600; transition: 0.3s; width: 85%; }
-        .btn:active { transform: scale(0.95); background: var(--pink-bg); color: white; }
-        .btn-line { background: var(--line-green); border: none; color: white; font-size: 18px; box-shadow: 0 4px 10px rgba(6,199,85,0.3); }
+<style>
+body{
+  margin:0;
+  font-family:'Prompt',sans-serif;
+  background:linear-gradient(180deg,#ffd6ec,#fff0f8);
+  color:#444;
+  scroll-behavior:smooth;
+}
 
-        .price-box { background: #FFFBFC; border: 2px dashed var(--pink-bg); border-radius: 20px; padding: 15px; margin: 10px 15px; font-size: 14px; color: #666; }
-        .promo-banner { background: linear-gradient(to right, #FFDEE9, #B5FFFC); border-radius: 15px; padding: 10px; margin: 10px; font-weight: 600; color: #d63384; font-size: 14px; }
-        
-        .app-list { text-align: left; font-size: 13px; color: #777; padding: 10px; background: #fdfdfd; border-radius: 15px; margin-top: 10px; border: 1px solid #eee; }
-    </style>
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#ff9fcd;
+  padding:12px;
+  text-align:center;
+  z-index:999;
+}
+nav a{
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:500;
+}
+
+header{
+  margin-top:60px;
+  padding:40px 20px;
+  text-align:center;
+  background:linear-gradient(45deg,#ffb6da,#ffc9e6);
+  color:white;
+  font-size:30px;
+  font-weight:600;
+}
+
+.section{
+  padding:40px 20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:25px;
+  box-shadow:0 15px 40px rgba(255,105,180,0.15);
+  margin-bottom:30px;
+}
+
+h2{
+  color:#ff4fa3;
+  margin-top:0;
+}
+
+.price{
+  font-size:22px;
+  color:#ff1493;
+  font-weight:bold;
+}
+
+.button{
+  display:inline-block;
+  padding:12px 25px;
+  background:linear-gradient(45deg,#ff69b4,#ff85c1);
+  color:white;
+  border-radius:40px;
+  text-decoration:none;
+  margin-top:15px;
+  font-weight:500;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+}
+
+.grid img{
+  width:100%;
+  border-radius:15px;
+  cursor:pointer;
+  transition:0.3s;
+}
+.grid img:hover{
+  transform:scale(1.05);
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+  background:#ff9fcd;
+  color:white;
+}
+.small{
+  font-size:14px;
+  opacity:0.8;
+}
+</style>
 </head>
+
 <body>
 
-<div class="container">
-    <div class="header">
-        <h1>pinkjulie ju</h1>
-        <div class="tagline">สดใส น่ารัก สีแน่น เนี๊ยบทุกจุด ✨</div>
-    </div>
+<nav>
+<a href="#commission">คอมมิชชั่น</a>
+<a href="#sample">ตัวอย่างงาน</a>
+<a href="#bases">เลือกเบส</a>
+<a href="#apps">แอป</a>
+<a href="#games">เกม</a>
+<a href="#group">กลุ่ม</a>
+<a href="#contact">ติดต่อ</a>
+</nav>
 
-    <div class="section">
-        <a href="https://lin.ee/mCVSufI" class="btn btn-line">🟢 ขั้นตอนที่ 1 : ทักแชทสั่งงาน</a>
-        <a href="https://www.instagram.com/pinkjulie.land" class="btn">📸 Instagram: pinkjulie.land</a>
+<header>
+pinkjulie ju 🎨💗  
+<br>รับลงสีลายเส้นสุดหวาน x3
+</header>
 
-        <h2>🎨 งานลงสีจากเบส</h2>
-        <div class="price-box">
-            เลือกเบสร้าน: <b>เริ่มต้น 320.-</b><br>
-            พกเบสมาเอง: <b>เริ่มต้น 290.-</b><br>
-            <small>(รับ 1 เซต ได้ 6-8 ไฟล์ | มัดจำ 50%)</small>
-        </div>
+<section id="commission" class="section">
+<div class="card">
+<h2>🌈 คอมมิชชั่นลงสี</h2>
+<p>ลงสีลายเส้น ไม่มีตัวละครเป็นคน<br>
+โทนสดใส สีแน่น งานเนี๊ยบหวานคูณสาม</p>
 
-        <h2>📱 แอป & เกม (iOS)</h2>
-        <div class="promo-banner">
-            🎁 ซื้อ Good Note 6 (20.-) แถมฟรี 1 แอป/เกม!<br>
-            ⭐ Study Set 3 แอป เพียง 39.-
-        </div>
-        <div class="price-box">
-            <b>1 แอป 20.- | 2 แอป 35.-</b><br>
-            (แอปถัดไป +10.-)
-        </div>
-        <div class="app-list">
-            <b>Apps:</b> Procreate, Forest, Nomad Sculpt, EE35, iFontMaker, Good Notes 6<br>
-            <b>Games:</b> Minecraft, Stardew Valley, GTA San, Poppy Playtime 1-3, FNAF, Papa's Series, Kairosoft
-        </div>
+<p class="price">💰 ราคาเริ่มต้นที่</p>
+<ul>
+<li>เลือกเบสจากที่มี 320.-</li>
+<li>พกเบสมาเอง 290.-</li>
+</ul>
 
-        <h2>🎁 สติกเกอร์ | ธีม | เมโลดี้</h2>
-        <div class="price-box" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
-            <span>50c = <b>24฿</b></span>
-            <span>85c = <b>41฿</b></span>
-            <span>100c = <b>48฿</b></span>
-            <span>150c = <b>72฿</b></span>
-           
-        </div>
+<p>📦 1 เซต ได้ 6–8 ไฟล์</p>
 
-        <h2>📂 ดูคลังผลงาน</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
-            <a href="https://drive.google.com/drive/folders/1-3secNLuoBE4Qpxw1XFHVhQzCxruaeqU" class="btn" style="font-size: 11px;">กลุ่มหมี่ยำแห้ง</a>
-            <a href="https://drive.google.com/drive/folders/10NdXyILIaQZbbP2LgZHNn0v41NrxYRUh" class="btn" style="font-size: 11px;">กลุ่ม MS</a>
-        </div>
-    </div>
+<a class="button" href="https://lin.ee/mCVSufI">สอบถามสั่งซื้อทักเลย 💌</a>
 </div>
+</section>
+
+<section id="sample" class="section">
+<div class="card">
+<h2>🎨 ตัวอย่างงาน</h2>
+<div class="grid">
+<img src="ตัวอย่าง1.png">
+<img src="ตัวอย่าง2.png">
+<img src="ตัวอย่าง3.png">
+<img src="ตัวอย่าง4.png">
+<img src="ตัวอย่าง5.png">
+<img src="ตัวอย่าง6.png">
+</div>
+</div>
+</section>
+
+<section id="bases" class="section">
+<div class="card">
+<h2>📂 เลือกลายเส้น</h2>
+<ul>
+<li><a href="https://drive.google.com/drive/folders/1-3secNLuoBE4Qpxw1XFHVhQzCxruaeqU">หมี่ยำแห้ง</a></li>
+<li><a href="#">งานเฉพาะกลุ่ม 50 เซ็ต</a></li>
+<li><a href="#">กลุ่มรวมลายเส้น MS</a></li>
+<li><a href="#">ตามใจ By น้องเอิร์น</a></li>
+<li><a href="#">EMBRYO</a></li>
+<li><a href="#">สะออนเส้น</a></li>
+</ul>
+</div>
+</section>
+
+<section id="apps" class="section">
+<div class="card">
+<h2>📱 ขายแอป iOS</h2>
+<p>1 แอป 20.- | 2 แอป 35.- | แอปถัดไป +10</p>
+<p class="small">
+Forest, Rough Animator, Procreate, Procreate Pocket, EE35, Nomad Sculpt,
+Iguzhong, iFontMaker, GoodNotes6, Procreate Dreams
+</p>
+</div>
+</section>
+
+<section id="games" class="section">
+<div class="card">
+<h2>🎮 เกม iOS</h2>
+<p class="small">
+Construction Simulator 3, Farming Simulator 23, Muse Dash,
+Little Nightmares, Harvest Moon, Forager,
+GTA SA Definitive, Lego Series ฯลฯ
+</p>
+</div>
+</section>
+
+<section id="group" class="section">
+<div class="card">
+<h2>⭐ กลุ่มในเครือ Pinkjulie</h2>
+<p>jaojuly 🛼💫<br>
+รวมของตกแต่งเครือ juju 🧀🍒</p>
+<p>อัปงานเฉพาะกลุ่ม 90% รีเควสได้ตลอด</p>
+<p class="price">💸 ค่าเข้า 129 บาท</p>
+<a class="button" href="https://drive.google.com/drive/folders/137LmfFKWyNaZNRSqQSsqV5Ok919Ge3DH">ดูตัวอย่างกลุ่ม</a>
+</div>
+</section>
+
+<section id="contact" class="section">
+<div class="card" style="text-align:center;">
+<h2>💖 ติดต่อ</h2>
+<a class="button" href="https://lin.ee/mCVSufI">ทัก LINE เลย</a>
+<p>IG : pinkjulie.land</p>
+</div>
+</section>
+
+<footer>
+pinkjulie ju © 2026
+</footer>
 
 </body>
 </html>
