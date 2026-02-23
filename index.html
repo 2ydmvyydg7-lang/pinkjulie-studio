@@ -3,218 +3,226 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>pinkjulie ju</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+<title>PinkJulie Land</title>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 body{
-  margin:0;
-  font-family:'Prompt',sans-serif;
-  background:linear-gradient(180deg,#ffd6ec,#fff0f8);
-  color:#444;
-  scroll-behavior:smooth;
-}
-
-nav{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:#ff9fcd;
-  padding:12px;
-  text-align:center;
-  z-index:999;
-}
-nav a{
-  color:white;
-  margin:0 10px;
-  text-decoration:none;
-  font-size:14px;
-  font-weight:500;
+margin:0;
+font-family:'Prompt',sans-serif;
+background:linear-gradient(135deg,#ffd6f6,#ffe6fb,#fff0ff);
+color:#444;
 }
 
 header{
-  margin-top:60px;
-  padding:40px 20px;
-  text-align:center;
-  background:linear-gradient(45deg,#ffb6da,#ffc9e6);
-  color:white;
-  font-size:30px;
-  font-weight:600;
-}
-
-.section{
-  padding:40px 20px;
-  max-width:1000px;
-  margin:auto;
+text-align:center;
+padding:40px 20px;
+font-size:28px;
+font-weight:700;
+color:#ff4fb3;
 }
 
 .card{
-  background:white;
-  padding:25px;
-  border-radius:25px;
-  box-shadow:0 15px 40px rgba(255,105,180,0.15);
-  margin-bottom:30px;
+background:white;
+margin:20px;
+padding:20px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(255,105,180,0.15);
 }
 
-h2{
-  color:#ff4fa3;
-  margin-top:0;
-}
-
-.price{
-  font-size:22px;
-  color:#ff1493;
-  font-weight:bold;
-}
-
-.button{
-  display:inline-block;
-  padding:12px 25px;
-  background:linear-gradient(45deg,#ff69b4,#ff85c1);
-  color:white;
-  border-radius:40px;
-  text-decoration:none;
-  margin-top:15px;
-  font-weight:500;
+.section-title{
+font-size:20px;
+margin-bottom:15px;
+color:#ff4fb3;
+font-weight:600;
 }
 
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:15px;
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+gap:10px;
 }
 
-.grid img{
-  width:100%;
-  border-radius:15px;
-  cursor:pointer;
-  transition:0.3s;
-}
-.grid img:hover{
-  transform:scale(1.05);
+.item{
+background:#fff0fa;
+padding:10px;
+border-radius:12px;
+font-size:14px;
+cursor:pointer;
+border:2px solid transparent;
+transition:0.2s;
 }
 
-footer{
-  text-align:center;
-  padding:40px;
-  background:#ff9fcd;
-  color:white;
+.item:hover{ transform:scale(1.03); }
+
+.item input{ margin-right:6px; }
+
+.price-box{
+margin-top:15px;
+background:#ffe0f5;
+padding:12px;
+border-radius:12px;
+font-weight:600;
+text-align:center;
 }
-.small{
-  font-size:14px;
-  opacity:0.8;
+
+.button{
+margin-top:15px;
+padding:14px;
+border:none;
+border-radius:15px;
+background:#ff4fb3;
+color:white;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+width:100%;
 }
+
+a{
+color:#ff4fb3;
+text-decoration:none;
+word-break:break-word;
+}
+
+.notice{
+line-height:1.8;
+font-size:14px;
+}
+
 </style>
 </head>
 
 <body>
 
-<nav>
-<a href="#commission">คอมมิชชั่น</a>
-<a href="#sample">ตัวอย่างงาน</a>
-<a href="#bases">เลือกเบส</a>
-<a href="#apps">แอป</a>
-<a href="#games">เกม</a>
-<a href="#group">กลุ่ม</a>
-<a href="#contact">ติดต่อ</a>
-</nav>
+<header>🎀 PinkJulie Land 🎀</header>
 
-<header>
-pinkjulie ju 🎨💗  
-<br>รับลงสีลายเส้นสุดหวาน x3
-</header>
-
-<section id="commission" class="section">
+<!-- แอป -->
 <div class="card">
-<h2>🌈 คอมมิชชั่นลงสี</h2>
-<p>ลงสีลายเส้น ไม่มีตัวละครเป็นคน<br>
-โทนสดใส สีแน่น งานเนี๊ยบหวานคูณสาม</p>
+<div class="section-title">📱 แอป & เกม</div>
+<p>1 แอป 20฿ • 2 แอป 35฿ • แอปเพิ่ม +10฿</p>
 
-<p class="price">💰 ราคาเริ่มต้นที่</p>
-<ul>
-<li>เลือกเบสจากที่มี 320.-</li>
-<li>พกเบสมาเอง 290.-</li>
-</ul>
-
-<p>📦 1 เซต ได้ 6–8 ไฟล์</p>
-
-<a class="button" href="https://lin.ee/mCVSufI">สอบถามสั่งซื้อทักเลย 💌</a>
+<div class="grid" id="appList">
+<label class="item"><input type="checkbox" value="Procreate">Procreate</label>
+<label class="item"><input type="checkbox" value="GoodNotes 6">GoodNotes 6</label>
+<label class="item"><input type="checkbox" value="Forest">Forest</label>
+<label class="item"><input type="checkbox" value="Nomad Sculpt">Nomad Sculpt</label>
+<label class="item"><input type="checkbox" value="Minecraft">Minecraft</label>
+<label class="item"><input type="checkbox" value="Stardew Valley">Stardew Valley</label>
+<label class="item"><input type="checkbox" value="Terraria">Terraria</label>
+<label class="item"><input type="checkbox" value="LumaFusion">LumaFusion</label>
+<label class="item"><input type="checkbox" value="CapCut Pro">CapCut Pro</label>
+<label class="item"><input type="checkbox" value="Alight Motion">Alight Motion</label>
 </div>
-</section>
 
-<section id="sample" class="section">
+<div class="price-box" id="appResult">
+เลือก 0 แอป • รวม 0฿
+</div>
+</div>
+
+<!-- อิโมจิ -->
 <div class="card">
-<h2>🎨 ตัวอย่างงาน</h2>
-<div class="grid">
-<img src="ตัวอย่าง1.png">
-<img src="ตัวอย่าง2.png">
-<img src="ตัวอย่าง3.png">
-<img src="ตัวอย่าง4.png">
-<img src="ตัวอย่าง5.png">
-<img src="ตัวอย่าง6.png">
-</div>
-</div>
-</section>
+<div class="section-title">🎀 อิโมจิธีม Melody</div>
 
-<section id="bases" class="section">
+<div class="grid" id="emojiList">
+<label class="item"><input type="checkbox" data-price="39" value="Melody Pink Theme">Melody Pink (39฿)</label>
+<label class="item"><input type="checkbox" data-price="49" value="Melody Pastel Theme">Melody Pastel (49฿)</label>
+<label class="item"><input type="checkbox" data-price="59" value="Melody Glitter Theme">Melody Glitter (59฿)</label>
+</div>
+
+<div class="price-box" id="emojiResult">
+รวมอิโมจิ 0฿
+</div>
+</div>
+
+<!-- คอมมิชชั่น -->
 <div class="card">
-<h2>📂 เลือกลายเส้น</h2>
-<ul>
-<li><a href="https://drive.google.com/drive/folders/1-3secNLuoBE4Qpxw1XFHVhQzCxruaeqU">หมี่ยำแห้ง</a></li>
-<li><a href="#">งานเฉพาะกลุ่ม 50 เซ็ต</a></li>
-<li><a href="#">กลุ่มรวมลายเส้น MS</a></li>
-<li><a href="#">ตามใจ By น้องเอิร์น</a></li>
-<li><a href="#">EMBRYO</a></li>
-<li><a href="#">สะออนเส้น</a></li>
-</ul>
-</div>
-</section>
+<div class="section-title">🎨 งานลงสีจากเบส</div>
 
-<section id="apps" class="section">
-<div class="card">
-<h2>📱 ขายแอป iOS</h2>
-<p>1 แอป 20.- | 2 แอป 35.- | แอปถัดไป +10</p>
-<p class="small">
-Forest, Rough Animator, Procreate, Procreate Pocket, EE35, Nomad Sculpt,
-Iguzhong, iFontMaker, GoodNotes6, Procreate Dreams
-</p>
-</div>
-</section>
+<div class="notice">
 
-<section id="games" class="section">
-<div class="card">
-<h2>🎮 เกม iOS</h2>
-<p class="small">
-Construction Simulator 3, Farming Simulator 23, Muse Dash,
-Little Nightmares, Harvest Moon, Forager,
-GTA SA Definitive, Lego Series ฯลฯ
-</p>
-</div>
-</section>
+🌈 รับงานลงสีจากเบส (ไม่มีรับตัวละครคน)<br>
+🎨 ถนัดโทน สดใส น่ารัก สีแน่นๆ<br>
+✨ ลงสีเนี๊ยบ ใช้งานต่อได้เลย<br><br>
 
-<section id="group" class="section">
-<div class="card">
-<h2>⭐ กลุ่มในเครือ Pinkjulie</h2>
-<p>jaojuly 🛼💫<br>
-รวมของตกแต่งเครือ juju 🧀🍒</p>
-<p>อัปงานเฉพาะกลุ่ม 90% รีเควสได้ตลอด</p>
-<p class="price">💸 ค่าเข้า 129 บาท</p>
-<a class="button" href="https://drive.google.com/drive/folders/137LmfFKWyNaZNRSqQSsqV5Ok919Ge3DH">ดูตัวอย่างกลุ่ม</a>
-</div>
-</section>
+💰 ราคาเริ่มต้น<br>
+• เลือกเบสจากที่มี 320.-<br>
+• พกเบสมาเอง 290.-<br><br>
 
-<section id="contact" class="section">
-<div class="card" style="text-align:center;">
-<h2>💖 ติดต่อ</h2>
-<a class="button" href="https://lin.ee/mCVSufI">ทัก LINE เลย</a>
-<p>IG : pinkjulie.land</p>
-</div>
-</section>
+🎨 ตัวอย่างลายเส้นเลือกได้เลย<br>
 
-<footer>
-pinkjulie ju © 2026
-</footer>
+🍜 กลุ่มหมี่ยำแห้ง<br>
+<a href="https://drive.google.com/drive/folders/1-3secNLuoBE4Qpxw1XFHVhQzCxruaeqU" target="_blank">
+https://drive.google.com/drive/folders/1-3secNLuoBE4Qpxw1XFHVhQzCxruaeqU
+</a><br><br>
+
+50 เซ็ต งานเฉพาะกลุ่ม<br>
+<a href="https://drive.google.com/drive/folders/1–ABWx54RccOzGsh9wMcYZfkHaGo2UWR" target="_blank">
+https://drive.google.com/drive/folders/1–ABWx54RccOzGsh9wMcYZfkHaGo2UWR
+</a><br><br>
+
+💖 กลุ่มรวมลายเส้น MS<br>
+<a href="https://drive.google.com/drive/folders/10NdXyILIaQZbbP2LgZHNn0v41NrxYRUh" target="_blank">
+https://drive.google.com/drive/folders/10NdXyILIaQZbbP2LgZHNn0v41NrxYRUh
+</a><br><br>
+
+🌈 กลุ่มตามใจ By น้องเอิร์น<br>
+<a href="https://drive.google.com/drive/folders/1DW3z6nBgbxdIaB3MrAjpM0dANwvWu1gi" target="_blank">
+https://drive.google.com/drive/folders/1DW3z6nBgbxdIaB3MrAjpM0dANwvWu1gi
+</a><br><br>
+
+🐣 กลุ่ม EMBRYO<br>
+<a href="https://drive.google.com/drive/folders/1JZwDqA0h9l68cXXAFZBK7ZLIUye5fL2O" target="_blank">
+https://drive.google.com/drive/folders/1JZwDqA0h9l68cXXAFZBK7ZLIUye5fL2O
+</a><br><br>
+
+✨ กลุ่มสะออนเส้น<br>
+<a href="https://drive.google.com/drive/folders/1Oifp9ufOWVcJGW9IxV7pAvej3GmmRqEo" target="_blank">
+https://drive.google.com/drive/folders/1Oifp9ufOWVcJGW9IxV7pAvej3GmmRqEo
+</a><br><br>
+
+📌 ลูกค้าต้องแจ้ง<br>
+• โทนสีที่ต้องการ<br>
+• พกเบสมาเอง หรือเลือกจากลายเส้น<br><br>
+
+⏳ ระยะเวลางาน<br>
+• มีคิว 1–7 วัน<br>
+• ไม่มีคิว 1–3 วัน<br>
+• งานเร่ง +50/งาน<br><br>
+
+💳 เงื่อนไข<br>
+• มัดจำ 50% ก่อนเริ่มงาน<br>
+• ยกเลิกไม่คืนมัดจำ<br><br>
+
+📎 ดูผลงานก่อนสั่งได้เลยนะคะ 💖
+
+</div>
+</div>
+
+<script>
+const appBoxes=document.querySelectorAll('#appList input');
+const emojiBoxes=document.querySelectorAll('#emojiList input');
+const appResult=document.getElementById('appResult');
+const emojiResult=document.getElementById('emojiResult');
+
+function calculateAppPrice(count){
+if(count===0) return 0;
+if(count===1) return 20;
+if(count===2) return 35;
+return 35+(count-2)*10;
+}
+
+function updatePrice(){
+let selectedApps=[...appBoxes].filter(x=>x.checked);
+let selectedEmojis=[...emojiBoxes].filter(x=>x.checked);
+let appTotal=calculateAppPrice(selectedApps.length);
+let emojiTotal=selectedEmojis.reduce((s,e)=>s+Number(e.dataset.price),0);
+appResult.innerHTML=`เลือก ${selectedApps.length} แอป • รวม ${appTotal}฿`;
+emojiResult.innerHTML=`รวมอิโมจิ ${emojiTotal}฿`;
+}
+appBoxes.forEach(b=>b.addEventListener('change',updatePrice));
+emojiBoxes.forEach(b=>b.addEventListener('change',updatePrice));
+</script>
 
 </body>
 </html>
